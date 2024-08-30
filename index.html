@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Motos Peru</title>
+    <link rel="icon" href="/imgs/logo.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Css Style -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid justify-content-between">
+
+                <!-- Logo -->
+                <a class="navbar-brand mx-5" href="/index.html" id="logo">
+                    <img src="/imgs/eHS-1ebx4o_2J-JNS61v8-transformed.png" alt="" width="50" height="50">
+                </a>
+
+                <!-- Toggle Button  -->
+
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!-- Sidebar header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- Sidebar body -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="/templates/nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="/templates/catalogo.html">Catalogo</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="/templates/contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                        <!-- Login / Sign up  & Cart-->
+                        <div class="d-flex justify-content-center align-items-center gap-3 mx-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-person" id="iconos-perfil-bolsa" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="white"
+                                class="bi bi-bag" id="iconos-perfil-bolsa" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Carrusel -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="/imgs/img1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="mt-5 fs-3 text-uppercase">Descubre un Nuevo Nivel de Libertad</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">Explora con Estilo y Potencia</h1>
+                    <button class="btn px-4 py-2 fs-5 mt-5" style="background-color: #d32f2f; color: white"
+                        id="btn-carousel">Ver Modelos</button>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/imgs/img2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">Diseño y Tecnología a tu Alcance</p>
+                    <p class="display-1 fw-bolder text-capitalize">Conduce la Moto de tus Sueños</p>
+                    <button class="btn px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal"
+                        style="background-color: #d32f2f; color: white" id="btn-carousel">Conoce
+                        Más</button>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/imgs/img3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">Seguridad y Confort en Cada Kilómetro</p>
+                    <p class="display-1 fw-bolder text-capitalize">Viaja con Confianza</p>
+                    <button class="btn  px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal"
+                        style="background-color: #d32f2f; color: white" id="btn-carousel">Explorar Opciones </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container text-center my-5">
+        <!-- Badge -->
+        <div class="badge-outline">Respaldo</div>
+
+        <!-- Main Heading -->
+        <div class="main-heading">Con Mass Motos</div>
+
+        <!-- Sub Heading -->
+        <div class="sub-heading highlight-text">Rueda Inteligente.</div>
+    </div>
+    <div class="container my-5">
+        <div class="row g-3">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card card-custom card-white">
+                    <div class="card-body position-relative">
+                        <i class="bi bi-award card-icon bg-danger p-2 rounded-circle">
+                        </i>
+                        <img src="/imgs/card1.png" class="img-fluid mb-3" alt="Imagen 1">
+                        <div class="card-title">10</div>
+                        <div class="card-subtitle">Años de excelencia.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card card-custom card-red">
+                    <div class="card-body position-relative">
+                        <i class="bi bi-motorcycle card-icon bg-dark p-2 rounded-circle"></i>
+                        <img src="/imgs/card2.png" class="img-fluid mb-3" alt="Imagen 2">
+                        <div class="card-title">+ de 118</div>
+                        <div class="card-subtitle" style="color: white !important;">Millones de motocicletas vendidas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card card-custom card-white">
+                    <div class="card-body position-relative">
+                        <i class="bi bi-globe card-icon bg-danger p-2 rounded-circle"></i>
+                        <img src="/imgs/card3.jpg" class="img-fluid mb-3" alt="Imagen 3">
+                        <div class="card-title">Garantía</div>
+                        <div class="card-subtitle">La mejor y más extensa del mercado.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modelos -->
+    <div class="container text-start my-5">
+        <!-- Badge -->
+        <div class="badge-outline">Modelos</div>
+
+        <!-- Main Heading -->
+        <div class="main-heading">Sin importar cuál sea el reto, siempre</div>
+
+        <!-- Sub Heading -->
+        <div class="main-heading highlight-text">habra una moto a tu medida</div>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="row g-3">
+            <!-- Moto Card 1 -->
+            <div class="col-6 col-md-3">
+                <div class="moto-card">
+                    <img src="/imgs/scooter.jpg" class="moto-card-img-top" alt="Modelo 1">
+                    <div class="moto-card-body">
+                        <h5 class="moto-card-title">Scooter</h5>
+                        <p class="moto-card-text">La mejor solución de movilidad para todos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moto Card 2 -->
+            <div class="col-6 col-md-3">
+                <div class="moto-card">
+                    <img src="/imgs/urbano.jpg" class="moto-card-img-top" alt="Modelo 2">
+                    <div class="moto-card-body">
+                        <h5 class="moto-card-title">Urbano</h5>
+                        <p class="moto-card-text">El futuro a tu alcance, siempre disponible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moto Card 3 -->
+            <div class="col-6 col-md-3">
+                <div class="moto-card">
+                    <img src="/imgs/multiproposito.jpg" class="moto-card-img-top" alt="Modelo 3">
+                    <div class="moto-card-body">
+                        <h5 class="moto-card-title">Multipropositos</h5>
+                        <p class="moto-card-text">Una aventura cada día, en cualquier terreno</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moto Card 4 -->
+            <div class="col-6 col-md-3">
+                <div class="moto-card">
+                    <img src="/imgs/trabajo.jpg" class="moto-card-img-top" alt="Modelo 4">
+                    <div class="moto-card-body">
+                        <h5 class="moto-card-title">Trabajo</h5>
+                        <p class="moto-card-text">Indestructible, tan fuerte como tu trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center" id="section">
+        <!-- Badge -->
+        <div class="badge-outline my-5"
+            style="border: 2px solid rgb(255, 255, 255) !important; color: rgb(255, 255, 255) !important;">
+            Garantía
+        </div>
+        <!-- Main Heading -->
+        <div class="main-heading" style="color: white !important;">Cuenta con <span class="highlight-text">3 años o
+                30.000KM</span></div>
+        <span class=" main-heading highlight-text">de garantía, </span>
+        <div class="main-heading" style="color: white !important;">
+            la más extensa del mercado.</div>
+
+        <button class="btn px-4 py-2 fs-5  mt-2 mb-5" style="background-color: #d32f2f; color: white">Ver
+            Modelos</button>
+        <div class="container mb-5">
+            <div class="row">
+                <!-- Card Tiendas y talleres -->
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="/imgs/tiendas-icon.png" alt="Tiendas Icono">
+                            </div>
+                            <h5 class="card-title">Tiendas y talleres</h5>
+                            <p class="card-text">
+                                Conoce nuestra amplia red de distribuidores. Siempre puede haber uno cerca de ti.
+                            </p>
+                            <button class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#modalTiendasTalleres">Más Información</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Repuestos -->
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="/imgs/repuestos-icon.png" alt="Repuestos Icono">
+                            </div>
+                            <h5 class="card-title">Repuestos</h5>
+                            <p class="card-text">
+                                Para que nunca te detengas, tenemos repuestos y accesorios 100% disponibles.
+                            </p>
+                            <button class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#modalRepuestos">Cómpralos aquí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tiendas y Talleres -->
+        <div class="modal fade" id="modalTiendasTalleres" tabindex="-1" aria-labelledby="modalTiendasTalleresLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTiendasTalleresLabel">Tiendas y Talleres</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Conoce nuestra amplia red de distribuidores. Siempre puede haber uno cerca de ti. Contamos
+                            con más de 50 puntos de venta a nivel nacional, ofreciendo siempre el mejor servicio y
+                            atención personalizada.</p>
+                        <p>¡Visítanos en nuestras sucursales y descubre todas las opciones que tenemos para ti!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Repuestos -->
+        <div class="modal fade" id="modalRepuestos" tabindex="-1" aria-labelledby="modalRepuestosLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalRepuestosLabel">Repuestos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Para que nunca te detengas, tenemos repuestos y accesorios 100% disponibles. Desde piezas de
+                            motor hasta accesorios de personalización, todo lo que necesitas está aquí.</p>
+                        <p>Garantizamos la disponibilidad de nuestros productos con la mejor calidad y respaldo.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Explora -->
+                <div class="col-md-3">
+                    <h5>Explora</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Modelos de Motos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Eventos y Promociones</a></li>
+                        <li><a href="#">Reseñas y Comparativas</a></li>
+                    </ul>
+                </div>
+                <!-- Servicios -->
+                <div class="col-md-3">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Venta de Motos</a></li>
+                        <li><a href="#">Taller de Reparaciones</a></li>
+                        <li><a href="#">Accesorios y Repuestos</a></li>
+                        <li><a href="#">Financiamiento</a></li>
+                    </ul>
+                </div>
+                <!-- Soporte -->
+                <div class="col-md-3">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Garantía y Devoluciones</a></li>
+                        <li><a href="#">Atención al Cliente</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="bi bi-geo-alt"></i> Av. Las Motos 123, Lima, Perú</a></li>
+                        <li><a href="mailto:contacto@motos.com"><i class="bi bi-envelope"></i> contacto@motos.com</a>
+                        </li>
+                        <li><a href="tel:+51987654321"><i class="bi bi-phone"></i> +51 987 654 321</a></li>
+                        <li><a href="tel:+51987654322"><i class="bi bi-phone"></i> +51 987 654 322</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-1" id="logo-footer">
+                <img src="/imgs/logo.webp" alt="logo" width="50" height="50">
+            </div>
+
+            <div class="row text-center copyright">
+                <div class="col-12">
+                    <p>&copy; 2024 Todos los derechos reservados <a href="#">Mass Motos</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
